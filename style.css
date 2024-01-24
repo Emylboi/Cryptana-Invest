@@ -1,38 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
+body {
+  width: 100vw;
 }
 
-.header{
-    width: 100%;
-    height: 25vh;
-    background: linear-gradient(90deg, rgba(114,57,152,0.8743872549019608) 0%, rgba(128,34,195,0.7511379551820728) 100%);
+.header {
+  width: 100%;
+  height: 25vh;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 57, 152, 0.8743872549019608) 0%,
+    rgba(128, 34, 195, 0.7511379551820728) 100%
+  );
 }
 
-.headerContainer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.headerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.headerIcon{
-    background-image: url(images/logo-color.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 66vw;
-    height: 50%;
+.headerIcon {
+  background-image: url(images/logo-color.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 66vw;
+  height: 50%;
 }
 
-.headerButton{
-    font-size: 200%;
+.headerButton {
+  font-size: 200%;
 }
 
 /*  */
@@ -41,67 +45,71 @@ body{
 /*  */
 /*  */
 
-.squares{
-    padding-top: 5vh;
+.squares {
+  padding-top: 5vh;
 }
 
-.boxContainer{
-    display: flex;
-    flex-flow: column wrap;
+.boxContainer {
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.box{
-    width: 90%;
-    height: 30vh;
-    background: linear-gradient(90deg, rgba(114,57,152,0.8743872549019608) 0%, rgba(128,34,195,0.7511379551820728) 100%);
-    display: flex;
-    flex-flow: column wrap;
-    padding: 15px;
+.box {
+  width: 90%;
+  height: 30vh;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 57, 152, 0.8743872549019608) 0%,
+    rgba(128, 34, 195, 0.7511379551820728) 100%
+  );
+  display: flex;
+  flex-flow: column wrap;
+  padding: 15px 0;
 }
 
-.box:nth-child(odd){
-    align-self: flex-start;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+.box:nth-child(odd) {
+  align-self: flex-start;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 
-.box:nth-child(even){
-    align-self: flex-end;
+.box:nth-child(even) {
+  align-self: flex-end;
 }
 
-.box:nth-child(1){
-    background: none;
-    height: 25vh;
-    border: 1px solid black;
-    margin-top: 0;
+.box:nth-child(1) {
+  background: none;
+  height: 25vh;
+  border: 1px solid black;
+  margin-top: 0;
 }
 
-.box > .content > h1{
-    color: whitesmoke;
-    width: 75%;
-    border: 1px solid black;
+.box > .content > h1 {
+  color: whitesmoke;
+  width: 75%;
+  border: 1px solid black;
 }
 
-.box0 > h1{
-    color: #9667cc;
+.box0 > h1 {
+  color: #9667cc;
 }
 
-.content > button{
-    background-color: black;
-    color: whitesmoke;
-    width: 50%;
+.content > button {
+  background-color: black;
+  color: whitesmoke;
+  width: 50%;
 }
 
-.content > i{
-    font-size: 300%;
-    color: white;
-    width: 20%;
-    border: 1px solid black;
+.content > i {
+  font-size: 300%;
+  color: white;
+  width: 20%;
+  border: 1px solid black;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
 /*  */
@@ -110,8 +118,83 @@ body{
 /*  */
 /*  */
 
-.slider-Slide{
-    width: 100%;
-    height: 50vh;
+.slider-Slide {
+  width: 100%;
+  height: 50vh;
+}
 
+/*  */
+/*  */
+/* Forms */
+/*  */
+/*  */
+
+.formSection {
+  margin: 5vh 0;
+}
+
+.formSection > h1 {
+  color: #9667cc;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.inputField,
+.submitButton {
+  width: 80%;
+  margin: 3px 0;
+  height: 4vh;
+  border: 1px solid black;
+  margin-bottom: 2vh;
+}
+
+.textField {
+  height: 25vh;
+}
+
+.submitButton {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/*  */
+/*  */
+/* Footer */
+/*  */
+/*  */
+
+.footer {
+  background-color: #9667cc;
+}
+
+.footerContent {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.footerContact {
+  font-size: 1.5rem;
+}
+
+.footerLogo {
+  width: 60%;
+  margin: 5vh 0;
+}
+
+.footerIcons {
+  font-size: 300%;
+  margin: 5vh 0;
 }

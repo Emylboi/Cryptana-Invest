@@ -56,12 +56,57 @@
       </div>
     </section>
 
-    <section class="slider">
+    <section class="sliderSection">
         <div class="sliderContent">
             <img src="images/slider01.jpg" class="slider-Slide">
         </div>
     </section>
 
+    <section class="formSection">
+        <h1>Spørg Din Invest Expert</h1>
+        <form class="form">
+            <input
+            type="text"
+            class="inputField"
+            name="name"
+            required minlength="2"
+            placeholder="Navn"
+            >
+            <input
+            type="text"
+            class="inputField"
+            name="mail"
+            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Mail"
+            >
+            <textarea
+            placeholder="Spørgsmål"
+            class="inputField textField"
+            ></textarea>
+            <input
+            type="submit"
+            class="submitButton"
+            name="submit"
+            value="Send"
+            >
+        </form>
+    </section>
     
+    <footer class="footer">
+        <div class="footerContent">
+            <img src="images/logo-color.png" class="footerLogo">
+            <div class="footerContact">
+                <p>Cryptana Invest A/S <br> (hovedkontor)</p>
+                <p>George Haymans Alle 15 <br> 2900 Hellerup <br>    Danmark</p>
+                <p>+45 12 34 56 78</p>
+            </div>
+            <div class="footerIcons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
