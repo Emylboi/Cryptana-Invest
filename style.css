@@ -103,3 +103,15 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+/*  */
+/*  */
+/* Slider */
+/*  */
+/*  */
+
+.slider-Slide{
+    width: 100%;
+    height: 50vh;
+
+}
