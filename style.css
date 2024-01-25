@@ -88,7 +88,7 @@ body {
   width: 80%;
 }
 
-.box0{
+.box0 {
   position: relative;
 }
 
@@ -104,7 +104,8 @@ body {
   bottom: 10%;
 }
 
-.content > button, .box0 > button {
+.content > button,
+.box0 > button {
   background-color: black;
   color: whitesmoke;
   width: 50%;
@@ -129,28 +130,31 @@ body {
   top: 5%;
 }
 
-.content > h1{
+.content > h1 {
   font-size: 1.8rem;
   align-self: flex-start;
 }
 
-.content > button{
+.content > button {
   position: absolute;
   bottom: 10%;
 }
 
-.box1 > .content > i, .box3 > .content > i{
+.box1 > .content > i,
+.box3 > .content > i {
   /* align-self: flex-end; */
   text-align: center;
   right: 5%;
 }
 
-.box2 > .content > i, .box4 > .content > i{
+.box2 > .content > i,
+.box4 > .content > i {
   text-align: center;
   left: 5%;
 }
 
-.box1 > .content > h1, .box3 > .content > h1{
+.box1 > .content > h1,
+.box3 > .content > h1 {
   align-self: flex-end;
   text-align: end;
   position: absolute;
@@ -158,7 +162,8 @@ body {
   top: 33%;
 }
 
-.box2 > .content > h1, .box4 > .content > h1{
+.box2 > .content > h1,
+.box4 > .content > h1 {
   position: absolute;
   left: 5%;
   top: 33%;
@@ -251,25 +256,46 @@ body {
   margin: 5vh 0;
 }
 
-
 @media screen and (min-width: 768px) {
-  .box{
+  .box {
     width: 100%;
   }
 
-  .content > i{
+  /* ?????????? */
+  .box1 > .content > i,
+  .box2 > .content > i,
+  .box3 > .content > i,
+  .box4 > .content > i {
     font-size: 500%;
-  }
-
-  .box1 > .content > i, .box3 > .content > i{
+    left: 25%;
     align-self: flex-start;
     text-align: start;
-   /*  left: 5%; */
   }
 
-  .box2 > .content > i, .box4 > .content > i{
+  .box1 > .content > h1,
+  .box2 > .content > h1,
+  .box3 > .content > h1,
+  .box4 > .content > h1 {
     align-self: flex-start;
-    text-align: start;
-    /* left: 5%; */
+    text-align: center;
+    width: 100%;
+    left: 0%;
+  }
+
+  .box0 > h1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .box0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+.slider-Slide{
+  height: 80vh;
+}
+
+
