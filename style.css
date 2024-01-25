@@ -99,13 +99,19 @@ body {
   font-size: 2.5rem;
 }
 
-.box0 > button {
+.box0 > a > button {
   position: absolute;
   bottom: 10%;
 }
 
-.content > button,
-.box0 > button {
+.content > a, .box0 > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > a > button,
+.box0 > a > button {
   background-color: black;
   color: whitesmoke;
   width: 50%;
@@ -113,7 +119,7 @@ body {
   border: none;
 }
 
-.content > button:hover, .box0 > button:hover, .submitButton:hover{
+.content > a > button:hover, .box0 > a > button:hover, .submitButton:hover{
   cursor: pointer;
   background-color: orange;
 }
@@ -141,7 +147,7 @@ body {
   align-self: flex-start;
 }
 
-.content > button {
+.content > a > button {
   position: absolute;
   bottom: 10%;
 }
@@ -263,6 +269,11 @@ body {
   margin: 5vh 0;
 }
 
+.footerIcons > a{
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .box {
     width: 100%;
@@ -343,7 +354,7 @@ body {
 
   .slider-Slide{
     width: 80%;
-    height: 80vh;
+    height: 100vh;
   }
 
   .form{
