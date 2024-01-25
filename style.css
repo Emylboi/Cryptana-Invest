@@ -110,6 +110,12 @@ body {
   color: whitesmoke;
   width: 50%;
   height: 4vh;
+  border: none;
+}
+
+.content > button:hover, .box0 > button:hover, .submitButton:hover{
+  cursor: pointer;
+  background-color: orange;
 }
 
 .content {
@@ -220,6 +226,7 @@ body {
 .submitButton {
   background-color: black;
   color: whitesmoke;
+  border: none;
 }
 
 /*  */
@@ -282,20 +289,79 @@ body {
     left: 0%;
   }
 
-  .box0 > h1{
+  .box0 > h1 {
     width: 100%;
     text-align: center;
   }
 
-  .box0{
+  .box0 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .slider-Slide {
+    height: 80vh;
+  }
 }
 
-.slider-Slide{
-  height: 80vh;
-}
+@media screen and (min-width: 1366px) {
 
+  .headerIcon{
+    width: 50vw;
+    background-position: left;
+  }
+
+  .box{
+    max-width: 1366px;
+  }
+
+  .box:nth-child(odd), .box:nth-child(even){
+    align-self: center;
+  }
+
+  .box1 > .content > i,
+  .box2 > .content > i,
+  .box3 > .content > i,
+  .box4 > .content > i {
+    font-size: 500%;
+    top: 20%;
+    left: 5%;
+    align-self: flex-start;
+    text-align: start;
+  }
+
+  .content > button, .box0 > button, .submitButton{
+    width: 20%;
+  }
+
+  .sliderContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-Slide{
+    width: 80%;
+    height: 80vh;
+  }
+
+  .form{
+    max-width: 1366px;
+    margin: 0 auto; 
+  }
+
+  .formSection > h1{
+    font-size: 3rem;
+  }
+
+  .inputField{
+    width: 80%;
+  }
+
+  .footerLogo{
+    width: 20%;
+  }
+
+}
 
