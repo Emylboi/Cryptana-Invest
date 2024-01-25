@@ -64,52 +64,104 @@ body {
   );
   display: flex;
   flex-flow: column wrap;
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 .box:nth-child(odd) {
-  align-self: flex-start;
+  align-self: flex-end;
   margin-bottom: 5vh;
   margin-top: 5vh;
 }
 
 .box:nth-child(even) {
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .box:nth-child(1) {
   background: none;
-  height: 25vh;
-  border: 1px solid black;
+  height: 15vh;
   margin-top: 0;
 }
 
 .box > .content > h1 {
   color: whitesmoke;
-  width: 75%;
-  border: 1px solid black;
+  width: 80%;
+}
+
+.box0{
+  position: relative;
 }
 
 .box0 > h1 {
   color: #9667cc;
+  position: absolute;
+  top: 5%;
+  font-size: 2.5rem;
 }
 
-.content > button {
+.box0 > button {
+  position: absolute;
+  bottom: 10%;
+}
+
+.content > button, .box0 > button {
   background-color: black;
   color: whitesmoke;
   width: 50%;
+  height: 4vh;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
 }
 
 .content > i {
   font-size: 300%;
   color: white;
-  width: 20%;
-  border: 1px solid black;
+  position: absolute;
+  top: 5%;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
+.content > h1{
+  font-size: 1.8rem;
+  align-self: flex-start;
+}
+
+.content > button{
+  position: absolute;
+  bottom: 10%;
+}
+
+.box1 > .content > i, .box3 > .content > i{
+  /* align-self: flex-end; */
+  text-align: center;
+  right: 5%;
+}
+
+.box2 > .content > i, .box4 > .content > i{
+  text-align: center;
+  left: 5%;
+}
+
+.box1 > .content > h1, .box3 > .content > h1{
+  align-self: flex-end;
+  text-align: end;
+  position: absolute;
+  right: 5%;
+  top: 33%;
+}
+
+.box2 > .content > h1, .box4 > .content > h1{
+  position: absolute;
+  left: 5%;
+  top: 33%;
 }
 
 /*  */
@@ -197,4 +249,27 @@ body {
 .footerIcons {
   font-size: 300%;
   margin: 5vh 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .box{
+    width: 100%;
+  }
+
+  .content > i{
+    font-size: 500%;
+  }
+
+  .box1 > .content > i, .box3 > .content > i{
+    align-self: flex-start;
+    text-align: start;
+   /*  left: 5%; */
+  }
+
+  .box2 > .content > i, .box4 > .content > i{
+    align-self: flex-start;
+    text-align: start;
+    /* left: 5%; */
+  }
 }
