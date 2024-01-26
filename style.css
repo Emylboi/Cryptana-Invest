@@ -104,7 +104,8 @@ body {
   bottom: 10%;
 }
 
-.content > a, .box0 > a{
+.content > a,
+.box0 > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +120,9 @@ body {
   border: none;
 }
 
-.content > a > button:hover, .box0 > a > button:hover, .submitButton:hover{
+.content > a > button:hover,
+.box0 > a > button:hover,
+.submitButton:hover {
   cursor: pointer;
   background-color: orange;
 }
@@ -269,7 +272,7 @@ body {
   margin: 5vh 0;
 }
 
-.footerIcons > a{
+.footerIcons > a {
   text-decoration: none;
   color: white;
 }
@@ -317,17 +320,17 @@ body {
 }
 
 @media screen and (min-width: 1366px) {
-
-  .headerIcon{
+  .headerIcon {
     width: 50vw;
     background-position: left;
   }
 
-  .box{
+  .box {
     max-width: 1366px;
   }
 
-  .box:nth-child(odd), .box:nth-child(even){
+  .box:nth-child(odd),
+  .box:nth-child(even) {
     align-self: center;
   }
 
@@ -342,37 +345,37 @@ body {
     text-align: start;
   }
 
-  .content > button, .box0 > button, .submitButton{
+  .content > button,
+  .box0 > button,
+  .submitButton {
     width: 20%;
   }
 
-  .sliderContent{
+  .sliderContent {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .slider-Slide{
+  .slider-Slide {
     width: 80%;
     height: 100vh;
   }
 
-  .form{
+  .form {
     max-width: 1366px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
-  .formSection > h1{
+  .formSection > h1 {
     font-size: 3rem;
   }
 
-  .inputField{
+  .inputField {
     width: 80%;
   }
 
-  .footerLogo{
+  .footerLogo {
     width: 20%;
   }
-
 }
-
