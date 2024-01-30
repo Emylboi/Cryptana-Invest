@@ -85,14 +85,15 @@ body {
 
 .box > .content > h1 {
   color: whitesmoke;
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 
 .box0 {
   position: relative;
 }
 
-.box0 > h1 {
+.box0 > .content > h1 {
   color: #9667cc;
   position: absolute;
   top: 5%;
@@ -135,7 +136,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 1px solid black;
 }
 
 .content > i {
@@ -190,9 +190,25 @@ body {
 /*  */
 /*  */
 
-.slider-Slide {
+.sliderContent {
+  width: 100vw;
+  height: auto;
+}
+
+
+
+.single-slide > img{
   width: 100%;
-  height: 50vh;
+  height: 100%;
+}
+
+.single-slide{
+  display: none;
+}
+
+.single-slide.active{
+  display: flex; /* NEW */
+  justify-content: center; /* NEW */
 }
 
 /*  */
@@ -314,7 +330,7 @@ body {
     align-items: center;
   }
 
-  .slider-Slide {
+  .single-Slide {
     height: 80vh;
   }
 }
@@ -352,14 +368,16 @@ body {
   }
 
   .sliderContent {
-    display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .slider-Slide {
-    width: 80%;
-    height: 100vh;
+
+  .single-Slide > img {
+    
   }
 
   .form {
